@@ -13,7 +13,7 @@ reddit = praw.Reddit(client_id=client_id,
                      client_secret=client_secret,
                      user_agent=user_agent)
 
-# Subreddit name for AITA
+
 # Define subreddit and keyword
 subreddit_name = 'wallstreetbets'
 buyCount = 0;
@@ -21,9 +21,8 @@ sellCount = 0;
 holdCount = 0;
 keyword = input('What Stock do you want to analyze: ')
 
-# Fetch posts from the subreddit containing the keywordstart_time = int((datetime.utcnow() - timedelta(days=1)).timestamp())
     
-    # Fetch posts containing the keyword from the last 24 hours
+# Fetch posts containing the keyword from the last 24 hours
 subreddit = reddit.subreddit(subreddit_name)
 posts = subreddit.search(keyword, sort='new', syntax='cloudsearch', time_filter='week', limit=10)  # Fetching 10 latest posts
 
