@@ -4,8 +4,8 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 
 # Reddit API credentials
-client_id = 'JRSdzEF-EwY3lial42o0ig'
-client_secret = 'AQLZ6zdXvLD5rPs_0xMiB6vlhytuqQ'
+client_id = 'private'
+client_secret = 'private'  #you can get your own from https://www.reddit.com/wiki/api/
 user_agent = 'test'
 
 # Initialize Reddit instance
